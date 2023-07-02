@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <title>Using Plain Html in Pug</title> -->
+        <title>#{title}</title>
+        <link rel="stylesheet" href="/static/contact.css">
+    </head>
+    <header class="header">
+        <a href="#"><img src="/static/logo.png" alt="imgnotfouund">Dance Studio</a>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/service">Services</a>
+            <a href="/">Prices</a>
+            <a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="icons">
+            <span id="menu"class="open">&#9776; </span>
+            <span id="searchbar"class="searchi">&#128269; </span>
+        </div>
+
+        <form action="" id="search-form">
+            <input type="search" placeholder="search here">
+        </form>
+    </header>
+
+        
+        <h1>Get this Gym Membership for 60$ - Fill this form now !</h1>
+        <div class="container">
+         <form action="/" method = 'POST'id = "contact">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="text" name="age" id="age" placeholder="Enter Your age">
+            <input type="text" name="Gender" id="Gender" placeholder="Enter Your Gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="Tell Us More About You!!"></textarea>
+            <button class="btn">Submit</button>
+         </form></div>
+    
+    </body>
+    </html>
+    
+    
+    
+         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ad, est esse, error illo explicabo omnis corrupti eius veritatis cupiditate veniam hic magni. Cupiditate </p> -->
+         <!-- <p>
+            |#{content}</p></div> -->
+</body>
+<script src="/static/script.js"></script>
+
+</html>

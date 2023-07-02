@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{
+    --maincolor:rgba(159, 0, 159, 0.804);
+    --seondcolor:rgb(35, 32, 32);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--seondcolor);
+}
+::-webkit-scrollbar-thumb{
+
+    background: var(--maincolor);
+}
+img{
+    height: 50px;
+    color: white;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(255, 255, 255, 0.273);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 100000;
+    
+   
+}
+.header a{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: cursive;
+    
+}
+.main-background-content h1{
+    width: 90px;
+    /* filter: invert(); */
+    font-size: 2.5rem;
+}
+.icons span{
+    margin-left: 1rem;
+    font-size: 2.9rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icons span:hover{
+    color: var(--maincolor);
+}
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--maincolor);
+    text-align: center;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+
+}
+.navbar.active{
+    left: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ .open{
+    font-size:30px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 4%;
+    
+    
+ }
+ .searchi{
+    font-size:30px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 9%;
+    
+    
+ }
+ .searchi:hover{
+    color: var(--maincolor);
+ }
+.navbar a{
+    align-items: center;
+    display: block;
+    font-size: 35px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 1rem;
+    
+}
+.navbar a:hover{
+    color: var(--seondcolor);
+    letter-spacing: 3px;
+}
+  
+form{
+    top: -105%;
+    right: 1rem;
+    width: 50%;
+    position: absolute;
+}
+form.active{
+    top: 105%;
+}
+form input{
+    padding: 1.5rem;
+    width: 100%;
+    background: var(--maincolor);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+    
+}
+.background-main{
+    background: url('/static/cq5dam.resized.HIGH.1.0.jpg'); /*186 */
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+   
+
+
+
+}
+.main-background-content{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+}
+.vid1{
+    filter: blur(10px);
+}
+
+.main-background-content h1{
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 8s steps(22) infinite alternate;
+    border-right: 3px solid black;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+
+    
+}
+.main-background-content h1 span{
+    color: red;
+}
+.main-background-content p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 2.5rem;
+}
+@keyframes text {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width:22ch ;
+    }
+}
+
+.main-background-content a{
+    padding: 1rem 4rem;
+    background: var(--maincolor);
+    color: white;
+    font-size: 2.0rem;
+    margin: 10px;
+}
+.main-background-content a:hover{
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.main-dance{
+    background:url('/static/Picsart_22-12-04_15-23-45-865.png'), var(--maincolor);
+    padding: 3rem 7%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dance-headings{
+    text-align: center;
+    width: 100%;
+    margin:  0 auto;
+
+}
+.dance-headings h1{
+    color: white;
+    font-size: 40px;
+    padding: .5rem;
+}
+.dance-headings p{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+.main-dance-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-dance{
+    flex: 1 1 300px;
+}
+.inner-dance img{
+    height: 40rem;
+    width: 100%;
+    border-radius: 25px;
+}
+.dance-content{
+    width: 100%;
+    padding: 2rem;
+    background: var(--seondcolor);
+    border-radius: 25px;
+
+}
+.dance-content h2{
+    color: white;
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+.dance-content p{
+    color: wheat;
+    font-size: 1.5rem;
+}
+.main-pricing-container{
+    background: url('/static/Picsart_22-12-04_15-23-45-865.png'), var(--seondcolor);
+    padding: 3rem 7%;
+    filter: invert(1222px);
+}
+.main-pricing-container h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.main-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    gap: 15px;
+}
+.inner-price{
+    flex: 1 1 300px;
+    background: var(--maincolor);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.inner-price i{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: .5rem 0;
+}
+.price-content h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.price-content p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+
+}
+.inner-price a{
+    padding: 1rem 3rem;
+    background: var(--seondcolor);
+    color: white;
+    font-size: 1.5rem;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.inner-price a:hover{
+    letter-spacing: 3px;
+    border-radius: 35px;
+}
+
+.main-amazing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    background: var(--maincolor);
+}
+.amazing-dance{
+    padding: 2rem 7%;
+    background: url('/static/Picsart_22-12-04_15-23-45-865.png'), var(--seondcolor);
+    
+}
+.amazing-dance h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.inner-amazing{
+    flex: 1 1 45rem;
+}
+.inner-amazing img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+}
+.amazing-content{
+    padding: 0 2rem;
+    text-align: center;
+}
+.amazing-content h1{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.amazing-content p{
+    padding: 2rem 2rem;
+    margin-bottom: 30px;
+    line-height: 2.5rem;
+    font-size: 20px;
+}
+.amazing-content a{
+    display: block;
+    width: 90%;
+    background: var(--seondcolor);
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.amazing-content a:hover{
+    letter-spacing: 3px;
+    border-radius: 35px;
+}
+.subscribe{
+    background:  url('/static/Picsart_22-12-04_15-23-45-865.png')var(--maincolor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.subscribe-content{
+    width: 50%;
+}
+.subscribe-content h1{
+    color: white;
+    font-size: 50px;
+}
+.subscribe-content p{
+    color: white;
+    font-size:2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+.subscribe-content.myform{
+    width: 100%;
+}
+.subscribe-content .myform input{
+    width: 80%;
+    padding: 1rem 2rem;
+    margin-bottom: 20px;
+}
+#sus{
+    padding: 1rem;
+    background: red;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    html{
+        font-size: 50%;
+    }
+    .main-background-content p{
+        margin-bottom: 15px;
+    }
+    .main-background-content{
+     
+        top: 40%;
+        width: 80%;
+    }
+    .main-background-content h1{
+        font-size: 33px;
+    }
+    .background-main{
+        background: url('/static/gift-habeshaw-Etxf65FaTrs-unsplash.jpg'); /*186 */
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+    
+    
+    
+    }
+
+    
+    

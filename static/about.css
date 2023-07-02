@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{
+    --maincolor: rgb(235, 141, 0);
+    --seondcolor:rgb(35, 32, 32);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--seondcolor);
+}
+::-webkit-scrollbar-thumb{
+
+    background: var(--maincolor);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(255, 255, 255, 0.273);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 100000;
+    
+   
+}
+.header a{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: cursive;
+    
+}
+.header img{
+    width: 90px;
+    /* filter: invert(); */
+}
+.icons span{
+    margin-left: 1rem;
+    font-size: 2.9rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icons span:hover{
+    color: var(--maincolor);
+}
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--maincolor);
+    text-align: center;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+
+}
+.navbar.active{
+    left: 0;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+ .open{
+    font-size:30px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 4%;
+    
+    
+ }
+ .searchi{
+    font-size:30px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 9%;
+    
+    
+ }
+ .searchi:hover{
+    color: var(--maincolor);
+ }
+.navbar a{
+    align-items: center;
+    display: block;
+    font-size: 35px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 1rem;
+    
+}
+.navbar a:hover{
+    color: var(--seondcolor);
+    letter-spacing: 3px;
+}
+  
+form{
+    top: -105%;
+    right: 1rem;
+    width: 50%;
+    position: absolute;
+}
+form.active{
+    top: 105%;
+}
+form input{
+    padding: 1.5rem;
+    width: 100%;
+    background: var(--maincolor);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+    
+}
